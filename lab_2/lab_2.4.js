@@ -9,4 +9,4 @@ function fib(n) {
    return b;
 }
 let n = prompt("Введите n: ")
-alert(fib(n))
+alert(bigInt(fib(n)))
