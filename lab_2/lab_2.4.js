@@ -1,12 +1,8 @@
 function fib(n) {
-   let a = 1n;
-   let b = 1n;
-   for (let i = 3; i <= n; i++) {
-      let c = a + b;
-      a = b;
-      b = c;
-   }
-   return b;
+  return n <= 1 ? n : fib(n - 1) + fib(n - 2);
 }
+
+alert( fib(3) ); // 2
+alert( fib(7) ); // 13
 let n = prompt("Введите n: ")
 alert(bigInt(fib(n)))
